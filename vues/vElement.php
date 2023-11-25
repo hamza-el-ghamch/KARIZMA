@@ -11,6 +11,7 @@
 		<a href="index.php?page=connexion" id="important">Pour effectuer des modification, vous devez vous connecter</a>
 		</div>
 		<?php endif ?>
+	
 		
 		<input
 			type="text"
