@@ -14,6 +14,7 @@
 	</form>
 <?php break; ?>
 <?php case -1 ?>
+	
 	<p>Echec de la connexion ... Vous pouvez <a href="index.php?page=connexion">rééssayer</a>.</p>
 <?php break; ?>
 <?php endswitch ?>
