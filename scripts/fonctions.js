@@ -4,6 +4,7 @@ export var setEventSample = function(iRechercheIngredients, ldIngredients){
 			
 			if(RegExp("div-.*" + this.value, 'i').test(el.getAttribute('nom'))){
 				el.classList.remove('sample');
+				
 			}
 			else{
 				el.classList.add("sample");
