@@ -3,6 +3,7 @@ $c = seConnecter();
 
 //on commence par supposer que tout va mal (que la page reherchée n'existe pas)
 $titrePageAjout = '???';
+//???
 
 $pageExiste = false;
 
