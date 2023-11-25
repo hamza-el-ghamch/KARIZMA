@@ -1,4 +1,5 @@
 <?php
+//
 function transformeCharsAutorises($entree){
 	$transformations = [
 		'#Œ#' => 'Oe',
