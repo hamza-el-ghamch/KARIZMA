@@ -8,14 +8,14 @@ function seConnecter() {
 		$connexion = mysqli_connect(SERVEUR, UTILISATRICE_PAR_DEFAUT, MOTDEPASSE_PAR_DEFAUT, BDD);
 	}
 	if (mysqli_connect_errno()) {
-	    echo "<script>console.log('Echec de la connexion à la base');</script>";
+	    echo "<script>console.log('Echec de la connexion Ã  la base');</script>";
 		exit();
 	}
 	mysqli_set_charset($connexion,'utf8');
 	return $connexion;
 }
 
-// déconnexion de la BD
+// dÃ©connexion de la BD
 function deconnectBD($connexion) {
 	mysqli_close($connexion);
 }
@@ -117,8 +117,8 @@ function recupereUnites($c){
 	return $listeUnites;
 }
 
-// modification vaut false si on effectue une création de recette et l'id de la recette à modifier sinon
-// les listes d'ingrédients, de préparation et d'ustensile sont des tableaux de tableaux indexés sur les id des éléments utilisés.
+// modification vaut false si on effectue une crÃ©ation de recette et l'id de la recette Ã  modifier sinon
+// les listes d'ingrÃ©dients, de prÃ©paration et d'ustensile sont des tableaux de tableaux indexÃ©s sur les id des Ã©lÃ©ments utilisÃ©s.
 function insererRecette($infosRecette, $listeIngredients, $listeUstensile, $listePreparation, $listeReutilise, $modification){
 	$c = seConnecter();	
 	try {
