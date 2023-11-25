@@ -1,4 +1,6 @@
 <?php
+//les constant 
+
 	define('SEL', 'larme d\'homophobe');
 	define('HASHED_PASSWORD','lanZLtT0D5CAI');
 	
