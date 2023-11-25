@@ -11,6 +11,7 @@
 					src="contenus/<?= $_SESSION['auth'] ? 'closed_lock' : 'open_lock' ?>.svg"
 				/>
 			</span>
+			
 		</p>
 	</a>
 </nav>
