@@ -10,6 +10,7 @@
 		<a id="suppression" href="index.php?page=recette&id=<?= $infoRecette['idRecette']?>&mode=suppr"><span>Supprimer la recette</span></a>
 	</div>
 	
+	
 	<h1><?= $infoRecette['nom'] ?></h1>
 	<p>Pour <?= $infoRecette['portions'] . " " . $infoRecette['unite'] ?>
 	<br/>
