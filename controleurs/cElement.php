@@ -5,7 +5,7 @@ $titrePartUn = '???';
 $titrePartDeux = '???';
 
 $pageExiste = false;
-
+//$pageExiste
 $type = NULL;
 $table = NULL;
 
