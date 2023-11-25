@@ -1,6 +1,7 @@
 <?php
 	$routes = array(
 		'accueil' => array(
+			
 			'controleur' => 'cAccueil',
 			'vue' => 'vAccueil',
 			'nom' => 'Accueil',
