@@ -5,5 +5,7 @@ window.onload = function(){
 	var ldIngredients = document.getElementsByClassName('divIngredient');
 	
 	fonc.setEventSample(iRechercheIngredients, ldIngredients);
+
+
 	
 }
