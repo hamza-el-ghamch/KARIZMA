@@ -10,6 +10,7 @@
 	<p>Ajouter un ingrédient :</p>
 	<form method="POST" action="index.php?page=ajouterElement">
 		<label for="nomIngredient">Nom :</label>
+		
 		<input type="text" name="nomIngredient" pattern="<?=PATTERN_CHAMPS_NOM?>" title="<?=DESC_CHAMPS_NOM?>" required />
 		<br/>
 		<p>Disponibilité :</p>
