@@ -1,6 +1,6 @@
 <?php
 $c = seConnecter();
-
+//connecter
 $reussi = false;
 //suppression d'un élément
 if (isset($_GET['delete'])){
