@@ -8,6 +8,7 @@ window.onload = function(){
 	fonc.setEventSample(iRechercheIngredients, ldIngredients);
 	
 	
+	
 	var aCheckboxes = document.querySelectorAll('aside input.cb');
 	var liListeIngredients = document.getElementById('listeIngredients');
 	var liListeUstensiles = document.getElementById('listeUstensiles');
