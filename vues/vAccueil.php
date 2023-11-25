@@ -9,6 +9,7 @@
 				<div class="recetteInfos">
 				<p><?= $recette['genre'] ?></p>
 				<p>Réalisation : <?= $recette['duree'] ?></p>
+					
 				</div>
 			</div>
 		<?php endforeach ?>
