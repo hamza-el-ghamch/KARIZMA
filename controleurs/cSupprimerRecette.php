@@ -1,6 +1,6 @@
 <?php
 $c = seConnecter();
-
+//
 $reussi = false;
 
 //suppression d'une reccette. On vérifie d'abord que l'on peut la supprimer.
