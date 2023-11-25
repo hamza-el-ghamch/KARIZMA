@@ -6,6 +6,7 @@ require('inc/routes.php');
 require('inc/modele.php');
 require('inc/fonctions.php');
 
+
 if(!(isset($_SESSION['auth']))){
 	$_SESSION['auth'] = false;
 }
