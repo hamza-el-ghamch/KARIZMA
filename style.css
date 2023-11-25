@@ -1,0 +1,487 @@
+:root {
+	--couleur-principale: #d8d8f8;
+	--couleur-vert-1: #d8f0b0;
+	--couleur-rouge-1: #f0c8b0;
+	--couleur-gris-1: #f8f8f8;
+	--couleur-gris-2: #efefef;
+	--couleur-gris-3: #404040;
+	--char-oui: '\2726';
+	--char-non: '\2727';
+	--char-fleche-droite: '\27a4';
+	--largeur-minimale: 50em;
+}
+
+body{
+	background-color: var(--couleur-gris-1);
+	color: var(--couleur-gris-3);
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+h1{
+	font-size: 3em;
+}
+h2{
+	font-size: 2em;
+}
+h3{
+	font-size: 1.5em;
+}
+p{
+	font-size : 1em;
+}
+#central{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: start;
+	justify-content: start;
+}
+
+#principal{
+	border: 1px var(--couleur-gris-3) solid;
+	border-top: none;
+	border-bottom: none;
+	padding: 10px;
+	background-color: var(--couleur-gris-2);
+	
+	margin: 0%;
+	margin-top: 1%;
+	padding: 3%;
+	
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: left;
+	
+	position: relative;
+	width: 40%;
+}
+
+nav, aside, #principal{
+	margin-left: 1%;
+}
+header, nav, footer, aside form{
+	margin: 0%;
+	padding: 3%;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+nav, aside form{
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: flex-end;
+}
+aside form{
+	width: 100%;
+}
+nav, aside{
+	width: 20%;
+	min-width: 15em;
+	background-color: inherit;
+	border: none;
+}
+aside{
+	margin-left: 3%;
+}
+header, footer{
+	width: 100%;
+	padding: 0%;
+	background-color: var(--couleur-gris-2);
+}
+
+footer{
+	margin-top: 1%;
+}
+
+a{
+	color: var(--couleur-gris-3);
+}
+a:hover{
+	color : var(--couleur-principale);
+	background-color: var(--couleur-gris-3);
+}
+footer *, nav a, header a{
+	background-color: var(--couleur-principale);
+	margin: 1%;
+	padding: 1%;
+	border-radius: 20px;
+	font-size : 1em;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: center;
+	transition: all 0.5s;
+}
+footer a:hover, nav a:hover, aside a:hover, header a:hover{
+	background-color: var(--couleur-gris-3);
+	border-radius: 0px;
+}
+
+header h1{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header a{
+	text-align: center;
+	margin: 0%;
+	padding: 0%;
+	
+	min-width: auto;
+	width: 60%;
+	height: 3ex;
+	border-radius: 2em;
+	transition: all 1s;
+}
+header a:hover{
+	width: 100%;
+	border-radius: 0px;
+}
+
+div.principaleAside, aside .button{
+	display:flex;
+	flex-direction: column;
+	align-items: flex-end;
+	background-color: var(--couleur-gris-2);
+	margin: 1%;
+	padding: 1%;
+	border-radius: 20px;
+	transition: all 0.5s;
+}
+
+div.principaleAside div {
+	margin: 0.5em;
+}
+
+div.elemAside {
+	display: flex;
+	align-items: baseline;
+}
+
+div.principaleAside label {
+	max-width: 10em;
+}
+
+aside .button{
+	border: none;
+	font-size: 1.2em;
+	font-family: serif;
+	font-weight: bold;
+	padding: 3ex;
+}
+div.principaleAside:hover, aside .button:hover{
+	border-radius: 0px;
+}
+#asideGenre {
+	align-items: center;
+}
+
+
+aside .button:hover {
+	background-color: var(--couleur-gris-3);
+	color: var(--couleur-principale);
+}
+
+label.petitLabel:hover {
+	text-decoration: underline;
+}
+
+aside > label, aside > form > label {
+	font-size: 2em;
+	align-self: flex-start;
+}
+
+form ul{
+	list-style-type: none;
+}
+
+div.recetteInfos{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+div.recette{
+	border: 1px var(--couleur-gris-3) solid;
+	border-left: none;
+	border-right: none;
+	margin: 0px;
+	margin-bottom: -1px;
+	padding: 1%;
+	height: 100%;
+	
+	display: flex;
+	flex-direction: column;
+}
+
+div.recette:hover{
+	background-color: var(--couleur-principale);
+}
+div.recette a{
+	align-self: flex-start;
+	padding: 0%;
+	margin: 0%;
+	width: 99%;
+	border-radius: 20px;
+	transition: all 1s;
+}
+div.recette a:hover{
+	border-radius: 0px;
+}
+.recette a h3{
+	margin: 1%;
+}
+
+/*Gestion des input (au niveau du aside)*/
+
+input[type="radio"]{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	margin: 0px;
+}
+
+input[type="radio"]::after, input[type="checkbox"].choixTri::before{
+	border: none;
+	border-radius: 0.5ex;
+	color: var(--couleur-gris-3);
+	font-weight: bold;
+	font-size: 2em;
+	position: relative;
+	top: 0.4ex;
+	
+	content: var(--char-non);
+	
+	transition: all 0.2s;
+}
+
+input[type="radio"]:hover::after, input[type="checkbox"].choixTri:hover::before{
+	color: var(--couleur-gris-1);
+	border-radius: 0px;
+}
+
+input[type="radio"]:checked::after{
+	content: var(--char-oui);
+}
+
+input[type="radio"].autorise::after, input[type="checkbox"].choixTri.ustensile::before{
+	background-color: var(--couleur-principale);
+}
+input[type="radio"].interdit::after{
+	background-color: var(--couleur-rouge-1);
+	margin: 0px;
+}
+input[type="radio"].requis::after, input[type="checkbox"].choixTri.genre::before {
+	background-color: var(--couleur-vert-1);
+}
+
+span.choixTri {
+	width: 0px;
+	margin: 0px;
+}
+
+input[type="checkbox"].choixTri {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+
+input[type="checkbox"].choixTri.genre:checked::before, input[type="checkbox"].choixTri.ustensile:not(:checked)::before{
+	content: var(--char-oui);
+}
+
+input[type="checkbox"].choixTri.genre:not(:checked)::before, input[type="checkbox"].choixTri.ustensile:checked::before{
+	background-color: var(--couleur-rouge-1);
+}
+
+.centre{
+	text-align: center;
+}
+
+/*Gestion des dropdowns*/
+
+input[type="checkbox"].cb{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+input[type="checkbox"].cb + label::before,
+input[type="checkbox"].cb + label::after {
+	font-size: 1em;
+	padding: 0.2ex;
+}
+
+input[type="checkbox"].cb:not(:checked) + label::before,
+input[type="checkbox"].cb:not(:checked) + label::after{
+	content: var(--char-non);
+}
+
+input[type="checkbox"].cb:checked + label::before,
+input[type="checkbox"].cb:checked + label::after{
+	content: var(--char-oui);
+}
+
+input[type="checkbox"].dropdown {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+input[type="checkbox"].dropdown + label::before{
+	transition: all 0.2s;
+	display: inline-block;
+	content: ' ' var(--char-fleche-droite) ' ';
+}
+
+input[type="checkbox"].dropdown + label:hover::before{
+	color: var(--couleur-principale);
+}
+
+input[type="checkbox"].dropdown:checked + label::before {
+	transform: rotate(0.25turn);
+}
+
+input[type="checkbox"].dropdown:checked + * + div {
+	animation-duration: 0.2s;
+	animation-name: montrer;
+}
+
+input[type="checkbox"].dropdown:not(:checked) + * + div {
+	opacity: 0;
+	display: none;
+}
+
+@keyframes montrer {
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+#modifs{
+	align-self: flex-end;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+#modifs>*{
+	border-radius: 1em;
+	transition: all 0.5s;
+}
+
+#edition, #suppression, #important {
+	padding: 0.5em;
+	text-decoration: underline;
+	border: none;
+	margin: 0px;
+	font-family: serif;
+	font-size: 1em;
+}
+
+#edition {
+	background-color: var(--couleur-vert-1);
+	
+}
+
+#edition:hover {
+	color: var(--couleur-vert-1);
+	background-color: var(--couleur-gris-3);
+}
+
+#suppression {
+	background-color: var(--couleur-rouge-1);
+}
+
+#suppression:hover {
+	color: var(--couleur-rouge-1);
+	background-color: var(--couleur-gris-3);
+}
+
+#important{
+	background-color: var(--couleur-principale);
+}
+
+#important:hover {
+	color: var(--couleur-principale);
+	background-color: var(--couleur-gris-3);
+}
+
+.important {
+	color: var(--couleur-principale);
+	background-color: var(--couleur-gris-3);
+}
+div:hover > span.important{
+	color: var(--couleur-gris-3);
+	background-color: var(--couleur-principale);
+}
+
+
+.lock img, .unlock img{
+	border-radius: 1em;
+	height: 1em;
+}
+.lock img{
+	background-color: var(--couleur-vert-1);
+}
+.unlock img{
+	background-color: var(--couleur-rouge-1);
+}
+
+select{
+	border: none;
+}
+textarea{
+	width: 100%;
+}
+
+.sample{
+	display: none;
+}
+
+@media (max-width: 75em){
+	#central {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	#principal{
+		width: 90%;
+	}
+
+	
+	nav, footer{
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	aside form{
+		width: 100%;
+	}
+	nav, aside{
+		width: 90%;
+	}
+	
+	header a {
+		width: 100%;
+	}
+	
+	div.recetteInfos{
+		display: flex;
+		flex-direction: column;
+	}
+}
